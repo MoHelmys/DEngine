@@ -1,0 +1,66 @@
+/* google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/* google fonts  end */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+.container {
+  @apply max-w-[1290px] mx-auto;
+}
+
+@layer components {
+  .nav-link {
+    @apply text-heading text-sm font-semibold flex justify-center items-center gap-1 w-fit relative before:inline-block before:w-0 before:absolute before:border-b before:border-heading before:h-full leading-4 hover:before:w-full before:transition-all before:duration-300 before:left-0;
+  }
+}
+
+@layer components {
+  .nav-link > img {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .border-btn-wrapper {
+    @apply translate-x-0 translate-y-0;
+  }
+}
+
+@layer components {
+  .bg-btn-wrapper {
+    @apply translate-x-0 translate-y-0;
+  }
+}
+
+@layer components {
+  .border-btn {
+    @apply block  text-center rounded-[125px] border border-sb-orange hover:text-white text-heading text-[15px] leading-[15px] relative overflow-hidden bg-transparent font-bold px-[30px] py-3 transition-all duration-300 before:block before:absolute before:w-full before:h-full before:top-full before:-z-[1] before:left-0 before:transition-all before:duration-300 before:bg-sb-orange before:bg-opacity-50 hover:before:top-0 after:block after:absolute after:w-full after:h-full after:top-full  after:left-0 after:transition-all after:duration-300 after:bg-sb-orange after:delay-200 hover:after:top-0 after:-z-[1];
+  }
+}
+
+@layer components {
+  .bg-btn {
+    @apply block  text-center rounded-[125px] border border-sb-orange hover:text-heading text-white text-[15px] leading-[15px] relative overflow-hidden bg-transparent font-bold px-[30px] py-3 transition-all duration-300 before:block before:absolute before:w-full before:h-full hover:before:-top-full before:-z-[1] before:left-0 before:transition-all before:duration-300 before:bg-sb-orange before:bg-opacity-50 before:top-0 before:delay-200 after:block after:absolute after:w-full after:h-full hover:after:-top-full  after:left-0 after:transition-all after:duration-300 after:bg-sb-orange  after:top-0 after:-z-[1];
+  }
+}
+
+.swiper {
+  @apply w-full;
+}
+
+/* video player wrapper  */
+.v-wrapper {
+  @apply w-screen h-screen flex justify-center items-center fixed z-50 bg-black/50 top-0 left-0  overflow-hidden;
+}
+
+.v-close-btn {
+  @apply w-14 aspect-square rounded-full bg-white/20 text-white text-3xl absolute top-3 right-6 z-50 transition-all duration-300 hover:bg-white hover:text-heading;
+}
+
+.v-player {
+  @apply w-[80%]  absolute;
+}

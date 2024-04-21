@@ -1,0 +1,15 @@
+{
+  "name": "Tailwind Template",
+  "description": "tailwind template starter",
+  "version": "1.0.0",
+  "author": "risuvodev",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./assets/css/output.css --watch",
+    "build": "npx tailwindcss -i ./input.css -o ./assets/css/output.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
