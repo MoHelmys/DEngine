@@ -112,3 +112,11 @@
     transform: scaleX(1);
   }
 }
+
+.active-faq .plus {
+  display: none !important;
+}
+
+.active-faq .minuse {
+  display: block !important;
+}
