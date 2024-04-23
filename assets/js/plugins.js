@@ -3,7 +3,7 @@
 if (document.querySelector(".partnerSlider")) {
   new Swiper(".partnerSlider", {
     spaceBetween: 30,
-    slidesPerView: 1,
+    slidesPerView: 3,
     // centeredSlides: "auto",
     loop: true,
     autoplay: {
@@ -53,11 +53,11 @@ if (document.querySelector(".projectSlider")) {
     },
     breakpoints: {
       640: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 10,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
       },
       1024: {
@@ -129,6 +129,32 @@ faqsWrapper.forEach((element) => {
   });
 });
 
+// counter
+
+const counter = (item) => {
+  let countdown = null;
+  const count = Number(item.getAttribute("data-count-fm"));
+  const valueType = item.getAttribute("data-type-fm");
+  const speed = Number(item.getAttribute("data-speed-fm"));
+  let startNumber = 0;
+  clearInterval(countdown);
+  countdown = setInterval(function () {
+    item.innerText = startNumber + valueType;
+    if (count > 10000 && startNumber < count - 10000) {
+      startNumber += 1000;
+    } else if (count > 1000 && startNumber < count - 1000) {
+      startNumber += 100;
+    } else if (count > 100 && startNumber < count - 100) {
+      startNumber += 10;
+    } else {
+      startNumber++;
+    }
+    if (startNumber > count) {
+      clearInterval(countdown);
+    }
+  }, speed / count);
+};
+
 // scroll control
 
 let running = [];
@@ -140,20 +166,25 @@ const scrollAnimate = (event) => {
       const rect = item.getBoundingClientRect()?.y;
       if (rect - window.innerHeight <= 0 && rect >= 0) {
         if (running.indexOf(item) < 0) {
-          if (item.getAttribute("data-count-qs")) {
-            let countdown = null;
-            const count = Number(item.getAttribute("data-count-fm"));
-            const valueType = item.getAttribute("data-type-fm");
-            const speed = Number(item.getAttribute("data-speed-fm"));
-            let startNumber = 0;
-            clearInterval(countdown);
-            countdown = setInterval(function () {
-              item.innerText = startNumber + valueType;
-              startNumber++;
-              if (startNumber > count) {
-                clearInterval(countdown);
+          const animType = item.getAttribute("data-anim-type");
+          switch (animType) {
+            case "count-width":
+              if (item.classList.value.includes("width-increase")) {
+                item.classList.remove("width-increase");
+                setTimeout(() => {
+                  item.classList.add("width-increase");
+                }, 10);
+              } else {
+                item.classList.add("width-increase");
               }
-            }, speed / count);
+
+              break;
+
+            default:
+              break;
+          }
+          if (item.getAttribute("data-count-fm")) {
+            counter(item);
           }
           running.push(item);
         }
@@ -170,4 +201,14 @@ window.addEventListener("load", (event) => {
 
 window.addEventListener("scroll", (event) => {
   scrollAnimate(event);
+  // sticky header
+  const header = document.getElementById("stickyHeader");
+  if (!header.classList.value.includes("bg-white") && window.scrollY > 0) {
+    header.classList.add("bg-white");
+  } else if (
+    header.classList.value.includes("bg-white") &&
+    window.scrollY === 0
+  ) {
+    header.classList.remove("bg-white");
+  }
 });

@@ -19,3 +19,14 @@ if (playBtn) {
     });
   });
 }
+
+// mobile nav toggle
+const menuBtn = document.getElementById("mobile-nav-btn");
+
+menuBtn.addEventListener("click", () => {
+  document.getElementById("menu-btn").classList.toggle("hidden");
+  document.getElementById("close-btn").classList.toggle("hidden");
+  document
+    .getElementById("mnav-menu-item")
+    .classList.toggle("-translate-x-[100vw]");
+});
