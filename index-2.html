@@ -14,7 +14,7 @@
     <!-- overwrite custom css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body id="root " class="relative">
+  <body id="root " class="relative bg-[#FFFAF0]">
     <div
       class="flex justify-center w-full fixed top-0 z-[99999]"
       id="stickyHeader"
@@ -128,11 +128,22 @@
           </a>
         </div>
         <div class="gap-2.5 hidden lg:flex">
-          <div class="border-btn-wrapper">
-            <a class="border-btn" href="#">Login</a>
-          </div>
           <div class="bg-btn-wrapper">
-            <a class="bg-btn" href="#">Sign Up</a>
+            <a class="bg-btn flex gap-1 py-5 h-fit items-center" href="#">
+              Read More
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.6875 7.71875L8.6875 12.7188C8.3125 13.125 7.65625 13.125 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
           </div>
         </div>
         <!-- mobile menu icons  -->
@@ -270,310 +281,131 @@
           </a>
         </div>
         <div class="flex gap-4 mt-5">
-          <div class="border-btn-wrapper">
-            <a class="border-btn" href="#">Login</a>
-          </div>
           <div class="bg-btn-wrapper">
-            <a class="bg-btn" href="#">Sign Up</a>
+            <a class="bg-btn py-5 flex gap-1 h-fit items-center" href="#">
+              Read More
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.6875 7.71875L8.6875 12.7188C8.3125 13.125 7.65625 13.125 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <!-- Hero start  -->
-    <section
-      class="bg-no-repeat bg-cover px-4 xl:px-0"
-      style="background: url('./assets/img/home-1/hero-bg.png')"
-    >
-      <div class="container pt-24 lg:pt-40">
-        <h1
-          class="w-full text-center text-heading text-4xl sm:text-6xl lg:text-80 font-light"
-        >
-          Revolutionize Your Mobile
-        </h1>
-        <h2
-          class="w-full text-center text-heading text-4xl sm:text-6xl lg:text-80 font-extrabold"
-        >
-          with State Software
-        </h2>
-
-        <div
-          class="w-full flex justify-center items-center relative pt-[90px] overflow-hidden"
-        >
-          <div
-            class="absolute rounded-full z-0 w-[80vw] h-[80vw] lg:w-[90vw] lg:h-[90vw] max-w-[1100px] max-h-[1100px] top-[86px] aspect-square border border-sb-orange flex justify-center items-center"
-          >
-            <div
-              class="bg-sb-orange w-1/2 lg:w-[70vw] aspect-square rounded-full max-w-[607px] absolute"
-            ></div>
-            <div class="mx-0 my-auto w-full h-full relative">
-              <div
-                class="fm-big-circle h-full w-full relative rounded-t-full flex items-center justify-center"
+    <section class="bg-white">
+      <div
+        class="bg-no-repeat bg-cover px-4 xl:px-0 w-full pb-[103px]"
+        style="background: url('./assets/img/home-2/hero-bg.png')"
+      >
+        <div class="container pt-24 lg:pt-40 grid grid-cols-12 gap-5">
+          <div class="col-span-6 h-full flex justify-center flex-col">
+            <h1
+              class="w-full max-w-[450px] text-[55px] leading-[61px] font-extrabold"
+            >
+              The Future
+              <span
+                class="relative w-fit before:block before:w-full before:h-3.5 before:bg-sb-orange before:absolute before:bottom-2 before:z-0 inline-block"
               >
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-2.png"
-                    alt="web design icon"
-                  />
-                </div>
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-1.png"
-                    alt="web design icon"
-                  />
-                </div>
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-2.png"
-                    alt="game design icon"
-                  />
-                </div>
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-1.png"
-                    alt="game dev icon"
-                  />
-                </div>
+                <span class="relative z-10"> Software</span>
+              </span>
+              Unleash Mobile Potential
+            </h1>
+            <p class="w-full max-w-[484px] text-paragraph text-lg mt-3">
+              Et purus duis sollicitudin dign habitant. Egestas nulla quis
+              venenatis cras sed eu massa eu faucibus Urna fusce Et purus
+            </p>
+            <div class="flex gap-[30px] w-full mt-[30px]">
+              <a
+                href=""
+                class="flex border-2 border-black transition-all duration-300 hover:border-sb-orange py-3.5 px-5 rounded-xl"
+              >
+                <img src="./assets/img/icon/play-store.png" alt="" class="" />
+              </a>
+              <a
+                href=""
+                class="flex border-2 border-black transition-all duration-300 hover:border-sb-orange py-3.5 px-5 rounded-xl"
+              >
+                <img src="./assets/img/icon/app-store.png" alt="" class="" />
+              </a>
+            </div>
+            <div class="flex gap-2 mt-9">
+              <img
+                src="./assets/img/home-2/download-list.png"
+                alt=""
+                class=""
+              />
+              <div class="">
+                <p class="text-xl font-[900] text-heading">3,000+</p>
+                <p class="text-sm text-paragraph">Downloads</p>
               </div>
             </div>
           </div>
-          <div
-            class="rounded-full rotate-45 absolute z-0 w-[80vw] h-[80vw] lg:w-[90vw] lg:h-[90vw] max-w-[1100px] max-h-[1100px] top-[86px] aspect-square border border-transparent flex justify-center items-center"
-          >
-            <div class="mx-0 my-auto w-full h-full relative">
-              <div
-                class="fm-big-circle h-full w-full relative rounded-t-full flex items-center justify-center"
-              >
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-3.png"
-                    alt="web design icon"
-                  />
-                </div>
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-5.png"
-                    alt="web design icon"
-                  />
-                </div>
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-3.png"
-                    alt="game design icon"
-                  />
-                </div>
-                <div
-                  class="fm-icon-block absolute rounded-full flex items-center justify-center"
-                >
-                  <img
-                    class="mx-0 my-auto w-16 sm:w-full"
-                    src="./assets/img/home-1/h-5.png"
-                    alt="game dev icon"
-                  />
-                </div>
-              </div>
-            </div>
+          <div class="col-span-6 relative flex justify-end">
+            <img
+              src="./assets/img/home-2/hero-img.png"
+              alt=""
+              class="relative z-10"
+            />
+            <img
+              src="./assets/img/home-2/hero-shape.png"
+              alt=""
+              class="absolute right-0 bottom-0 z-0"
+            />
           </div>
-          <img
-            src="./assets/img/home-1/person.png"
-            alt="person"
-            class="relative z-10 w-[200px] sm:w-[300px] lg:w-[472px]"
-          />
         </div>
       </div>
     </section>
     <!-- Hero end  -->
-    <!-- Features start -->
-    <section class="mt-[60px] lg:mt-[120px] px-4 xl:px-0">
-      <div
-        class="container grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-[30px]"
-      >
-        <!-- card start  -->
-        <div
-          data-aos="fade-up"
-          class="col-span-4 border shadow-primary border-[#F5F5F5] rounded-[20px] overflow-hidden relative after:block after:w-0 after:h-0 hover:after:w-full hover:after:h-full after:bg-sb-orange after:absolute after:top-0 after:left-0 after:transition-all after:duration-500 before:block before:w-0 before:h-0 hover:before:w-full hover:before:h-full before:bg-sb-orange before:absolute before:bottom-0 before:right-0 before:transition-all before:duration-500"
-        >
-          <div class="relative z-10 p-10 rounded-[20px] bg-white m-[1px]">
-            <img
-              src="./assets/img/home-1/features-card-bg.svg"
-              alt=""
-              class="absolute right-0 top-[30px] z-20"
-            />
-            <img
-              src="./assets/img/icon/chat.svg"
-              alt=""
-              class="pb-[30px] w-16 aspect-square"
-            />
-            <h1 class="text-2xl font-bold text-heading pb-5">
-              Prestige Management
-            </h1>
-            <p class="text-lg text-paragraph mb-7">
-              Real estate is a lucrative ind involves the is a buying selling
-              and reproperties. It is a good encompasses residential
-            </p>
-            <a
-              href=""
-              class="flex h-fit items-center gap-2.5 text-base font-bold text-sb-orange relative before:block before:w-full before:h-full before:border-b before:border-sb-orange before:absolute w-fit before:ease-out before:origin-right hover:before:origin-left before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100 group"
-            >
-              More about
-              <svg
-                class="group-hover:scale-x-125 origin-left transition-transform duration-300"
-                width="15"
-                height="13"
-                viewBox="0 0 15 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- card end  -->
-        <!-- card start  -->
-        <div
-          data-aos="fade-up"
-          data-aos-delay="100"
-          class="col-span-4 border shadow-primary border-[#F5F5F5] rounded-[20px] overflow-hidden relative after:block after:w-0 after:h-0 hover:after:w-full hover:after:h-full after:bg-sb-orange after:absolute after:top-0 after:left-0 after:transition-all after:duration-500 before:block before:w-0 before:h-0 hover:before:w-full hover:before:h-full before:bg-sb-orange before:absolute before:bottom-0 before:right-0 before:transition-all before:duration-500"
-        >
-          <div class="relative z-10 p-10 rounded-[20px] bg-white m-[1px]">
-            <img
-              src="./assets/img/home-1/features-card-bg.svg"
-              alt=""
-              class="absolute right-0 top-[30px] z-20"
-            />
-            <img
-              src="./assets/img/icon/content.svg"
-              alt=""
-              class="pb-[30px] w-16 aspect-square"
-            />
-            <h1 class="text-2xl font-bold text-heading pb-5">
-              Prestige Management
-            </h1>
-            <p class="text-lg text-paragraph mb-7">
-              Real estate is a lucrative ind involves the is a buying selling
-              and reproperties. It is a good encompasses residential
-            </p>
-            <a
-              href=""
-              class="flex h-fit items-center gap-2.5 text-base font-bold text-sb-orange relative before:block before:w-full before:h-full before:border-b before:border-sb-orange before:absolute w-fit before:ease-out before:origin-right hover:before:origin-left before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100 group"
-            >
-              More about
-              <svg
-                class="group-hover:scale-x-125 origin-left transition-transform duration-300"
-                width="15"
-                height="13"
-                viewBox="0 0 15 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- card end  -->
-        <!-- card start  -->
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          class="col-span-4 border shadow-primary border-[#F5F5F5] rounded-[20px] overflow-hidden relative after:block after:w-0 after:h-0 hover:after:w-full hover:after:h-full after:bg-sb-orange after:absolute after:top-0 after:left-0 after:transition-all after:duration-500 before:block before:w-0 before:h-0 hover:before:w-full hover:before:h-full before:bg-sb-orange before:absolute before:bottom-0 before:right-0 before:transition-all before:duration-500"
-        >
-          <div class="relative z-10 p-10 rounded-[20px] bg-white m-[1px]">
-            <img
-              src="./assets/img/home-1/features-card-bg.svg"
-              alt=""
-              class="absolute right-0 top-[30px] z-20"
-            />
-            <img
-              src="./assets/img/icon/search.svg"
-              alt=""
-              class="pb-[30px] w-16 aspect-square"
-            />
-            <h1 class="text-2xl font-bold text-heading pb-5">
-              Prestige Management
-            </h1>
-            <p class="text-lg text-paragraph mb-7">
-              Real estate is a lucrative ind involves the is a buying selling
-              and reproperties. It is a good encompasses residential
-            </p>
-            <a
-              href=""
-              class="flex h-fit items-center gap-2.5 text-base font-bold text-sb-orange relative before:block before:w-full before:h-full before:border-b before:border-sb-orange before:absolute w-fit before:ease-out before:origin-right hover:before:origin-left before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100 group"
-            >
-              More about
-              <svg
-                class="group-hover:scale-x-125 origin-left transition-transform duration-300"
-                width="15"
-                height="13"
-                viewBox="0 0 15 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <!-- card end  -->
-      </div>
-    </section>
-    <!-- Features end  -->
+
     <!-- About start  -->
-    <section class="mt-[60px] lg:mt-[120px] overflow-hidden px-4 xl:px-0">
+    <section
+      class="mt-[60px] lg:mt-[120px] overflow-hidden px-4 xl:px-0 bg-[#FFFAF0]"
+    >
       <div
         class="container grid grid-cols-6 lg:grid-cols-12 gap-0 lg:gap-[60px]"
       >
         <!-- left side  -->
         <div
           data-aos="fade-right"
-          class="col-span-6 h-full flex justify-center items-center bg-[#FFFAF0] rounded-[20px]"
+          class="col-span-6 h-full flex justify-between items-center flex-wrap bg-white rounded-[20px] gap-[65px] py-10 px-[70px]"
         >
-          <img src="./assets/img/home-1/about-img.png" alt="" class="" />
+          <img src="./assets/img/icon/twitter.png" alt="" class="px-2" />
+          <img src="./assets/img/icon/instagram.png" alt="" class="" />
+          <img src="./assets/img/icon/play-store-sm.png" alt="" class="" />
+          <img src="./assets/img/icon/drive.png" alt="" class="" />
+          <img src="./assets/img/icon/linkedin.png" alt="" class="" />
+          <img src="./assets/img/icon/pintarest.png" alt="" class="" />
+          <img src="./assets/img/icon/paypal.png" alt="" class="" />
+          <img src="./assets/img/icon/telegram.png" alt="" class="" />
+          <img src="./assets/img/icon/head.png" alt="" class="" />
+          <p class="text-2xl font-bold text-heading w-full text-center">
+            Trusted By 50+ Companies*
+          </p>
         </div>
         <!-- right side  -->
         <div data-aos="fade-left" class="col-span-6 pt-16">
-          <h1 class="text-xl text-sb-orange font-bold">Know About Us</h1>
+          <h1 class="text-xl text-sb-orange font-bold">About Us</h1>
           <h2
-            class="text-heading font-[900] text-3xl sm:text-[40px] leading-[45px] mt-1.5"
+            class="text-heading font-[900] text-3xl sm:text-[40px] leading-[45px] mt-1.5 max-w-[610px]"
           >
-            The Future of Mobile Software Unleash Your Mobile
+            Transforming Mobile Technology with Software
           </h2>
-          <p class="text-paragraph text-lg mt-2.5 max-w-[545px]">
-            Et purus duis sollicitudin dign habitant. Egestas nulla quis
+          <p class="text-paragraph text-lg mt-2.5 max-w-[520px]">
+            Et purus duis sollicitudin dignissim habitant. Egestas nulla quis
             venenatis cras sed eu massa eu faucibus Urna fusce Et purus duis
-            sollicitudin dignissim habitant. Egestas nulla quis venenatis
+            sollicitudin dignissim habitant. Egestas nulla
           </p>
-          <ul class="text-sm text-heading font-bold leading-[30px] mt-10 mb-20">
+          <ul class="text-sm text-heading font-bold leading-[30px] mt-5 mb-20">
             <li class="flex h-fit items-center gap-2.5">
               <svg
                 width="16"
@@ -609,119 +441,126 @@
       </div>
     </section>
     <!-- About end  -->
-    <!-- partners start  -->
-    <section class="mt-0 lg:mt-[120px] px-4 xl:px-0">
-      <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper partnerSlider">
-          <div class="swiper-wrapper flex items-center">
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/1.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
+    <!-- Why Us start  -->
+    <section class="mt-[60px] lg:mt-[120px] overflow-hidden px-4 xl:px-0">
+      <div class="container grid grid-cols-12 gap-x-[30px]">
+        <h1 class="text-xl text-sb-orange font-bold text-center col-span-12">
+          Why Choose Us
+        </h1>
+        <h2
+          class="text-heading font-[900] text-3xl lg:text-[40px] leading-[45px] mt-1.5 mb-8 lg:mb-[60px] text-center col-span-12"
+        >
+          Power of Mobile Software <br />
+          Unleashed Experience
+        </h2>
+        <div class="col-span-12 grid grid-cols-12 gap-[30px]">
+          <!--  card  -->
+          <div
+            data-aos="fade-up"
+            class="col-span-4 border shadow-primary border-[#F5F5F5] rounded-[20px] overflow-hidden relative after:block after:w-0 after:h-0 hover:after:w-full hover:after:h-full after:bg-sb-orange after:absolute after:top-0 after:left-0 after:transition-all after:duration-500 before:block before:w-0 before:h-0 hover:before:w-full hover:before:h-full before:bg-sb-orange before:absolute before:bottom-0 before:right-0 before:transition-all before:duration-500"
+          >
+            <div class="relative z-10 p-10 rounded-[20px] bg-white m-[1px]">
+              <div
+                class="flex justify-center items-center rounded-full bg-sb-orange w-[100px] h-[100px]"
+              >
+                <img src="./assets/img/icon/mail-setting.png" alt="" class="" />
+              </div>
+              <h1 class="text-heading text-2xl font-bold mt-12">
+                Music Player
+              </h1>
+              <p class="text-paragraph text-lg mt-3 mb-10">
+                Et purus duis sollicitudin dignissim habi tant. Egestas nulla
+                quis venenatis sed massa eu faucibus Urna fusce
+              </p>
+              <a
+                href=""
+                class="flex h-fit items-center gap-2.5 uppercase text-base font-bold text-heading hover:text-sb-orange relative before:block before:w-full before:h-full before:border-b before:border-sb-orange before:absolute w-fit before:ease-out before:origin-right hover:before:origin-left before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100 group"
+              >
+                view details
+                <span class="text-sb-orange">
+                  <svg
+                    class="group-hover:scale-x-125 origin-left transition-transform duration-300"
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </a>
             </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/2.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
+          </div>
+          <!--  card  -->
+          <div
+            data-aos="fade-up"
+            class="col-span-4 border shadow-primary border-[#F5F5F5] rounded-[20px] overflow-hidden relative after:block after:w-0 after:h-0 hover:after:w-full hover:after:h-full after:bg-sb-orange after:absolute after:top-0 after:left-0 after:transition-all after:duration-500 before:block before:w-0 before:h-0 hover:before:w-full hover:before:h-full before:bg-sb-orange before:absolute before:bottom-0 before:right-0 before:transition-all before:duration-500"
+          >
+            <div class="relative z-10 p-10 rounded-[20px] bg-white m-[1px]">
+              <div
+                class="flex justify-center items-center rounded-full bg-sb-orange w-[100px] h-[100px]"
+              >
+                <img src="./assets/img/icon/curancy.png" alt="" class="" />
+              </div>
+              <h1 class="text-heading text-2xl font-bold mt-12">
+                File Transfer
+              </h1>
+              <p class="text-paragraph text-lg mt-3 mb-10">
+                Et purus duis sollicitudin dignissim habi tant. Egestas nulla
+                quis venenatis sed massa eu faucibus Urna fusce
+              </p>
+              <a
+                href=""
+                class="flex h-fit items-center gap-2.5 uppercase text-base font-bold text-heading hover:text-sb-orange relative before:block before:w-full before:h-full before:border-b before:border-sb-orange before:absolute w-fit before:ease-out before:origin-right hover:before:origin-left before:transition-transform before:duration-300 before:scale-x-0 hover:before:scale-x-100 group"
+              >
+                view details
+                <span class="text-sb-orange">
+                  <svg
+                    class="group-hover:scale-x-125 origin-left transition-transform duration-300"
+                    width="15"
+                    height="13"
+                    viewBox="0 0 15 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </a>
             </div>
-            <div class="swiper-slide">
+          </div>
+          <!--  card  -->
+          <div
+            data-aos="fade-up"
+            class="group col-span-4 border shadow-primary border-[#F5F5F5] rounded-[20px] overflow-hidden relative after:block hover:after:w-0 after:w-full after:h-full after:bg-sb-orange after:absolute after:top-0 after:left-0 after:transition-all after:duration-500 before:block hover:before:w-0 before:w-full before:h-full before:bg-sb-orange before:absolute before:bottom-0 before:right-0 before:transition-all before:duration-500"
+          >
+            <div
+              class="relative z-10 pt-10 rounded-[20px] duration-300 border-t border-x border-sb-orange bg-sb-orange/20"
+            >
+              <h1
+                class="text-white group-hover:text-heading text-center text-2xl font-bold transition-all duration-300"
+              >
+                duis sollicitudin dignissim habi tant. Egestas
+              </h1>
               <img
-                src="./assets/img/partner/3.svg"
+                src="./assets/img/home-2/why-us-hover.png"
                 alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/4.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/5.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/6.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/7.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/1.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/2.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/3.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/4.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/5.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/6.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./assets/img/partner/7.svg"
-                alt=""
-                class="opacity-60 transition-all duration-300 hover:opacity-100"
+                class="mt-[25px]"
               />
             </div>
           </div>
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div> -->
         </div>
       </div>
     </section>
-    <!-- partners end  -->
-    <!-- why us start  -->
+    <!-- Why Us end  -->
+    <!-- Features  start  -->
     <section class="mt-[60px] lg:mt-[120px] px-4 xl:px-0">
       <div
         class="container grid grid-cols-6 lg:grid-cols-12 gap-[30px] lg:gap-0"
@@ -791,7 +630,7 @@
         </div>
       </div>
     </section>
-    <!-- why us end  -->
+    <!-- Features end  -->
     <!-- projects start  -->
     <section class="mt-[60px] lg:mt-[120px] bg-heading pt-[60px] lg:pt-[120px]">
       <div class="container">
