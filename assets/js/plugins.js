@@ -87,6 +87,26 @@ if (document.querySelector(".testimonialsSlider")) {
   });
 }
 
+// Home 2 testimonials slider
+if (document.querySelector(".h2-testimonialsSlider")) {
+  new Swiper(".h2-testimonialsSlider", {
+    direction: "vertical",
+    spaceBetween: 0,
+    slidesPerView: 1,
+    // centeredSlides: "auto",
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".testimonial-slider-next",
+      prevEl: ".testimonial-slider-prev",
+    },
+  });
+}
+
 // faq
 
 const faqsWrapper = document.querySelectorAll(".faq-wrapper");
