@@ -149,6 +149,44 @@ faqsWrapper.forEach((element) => {
   });
 });
 
+// faq home 2
+const h2FaqsWrapper = document.querySelectorAll(".h2-faq-wrapper");
+
+h2FaqsWrapper.forEach((element) => {
+  const faqs = element.querySelectorAll(".faq-toggler");
+  window.addEventListener("load", (event) => {
+    faqs.forEach((item, index) => {
+      if (index !== 0) {
+        item.classList.remove("active-faq");
+        item.style.height = item.children[0].clientHeight + "px";
+      } else {
+        item.classList.add("active-faq");
+      }
+    });
+  });
+});
+
+h2FaqsWrapper.forEach((element) => {
+  const faqs = element.querySelectorAll(".faq-toggler");
+  faqs.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      for (let i = 0; i < e.target.parentElement.children.length; i++) {
+        if (e.target.parentElement.children[i] === e.target) {
+          e.target.parentElement.children[i].classList.add("active-faq");
+          e.target.parentElement.children[i].style.height =
+            e.target.parentElement.children[i].children[0].clientHeight +
+            e.target.parentElement.children[i].children[1].clientHeight +
+            "px";
+        } else {
+          e.target.parentElement.children[i].classList.remove("active-faq");
+          e.target.parentElement.children[i].style.height =
+            e.target.parentElement.children[i].children[0].clientHeight + "px";
+        }
+      }
+    });
+  });
+});
+
 // counter
 
 const counter = (item) => {
