@@ -139,3 +139,7 @@
 .screen-height {
   height: calc(100vh - 70px);
 }
+
+canvas {
+  background-color: transparent !important; /* Default background color */
+}
