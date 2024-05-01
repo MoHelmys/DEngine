@@ -30,3 +30,14 @@ menuBtn.addEventListener("click", () => {
     .getElementById("mnav-menu-item")
     .classList.toggle("-translate-x-[100vw]");
 });
+
+// parallax
+
+function mouseMoveParallax(selectorId) {
+  let scene = document.getElementById(`${selectorId}`);
+  if (scene) {
+    let parallaxInstance = new Parallax(scene);
+  }
+}
+
+mouseMoveParallax("parallax-mouse");

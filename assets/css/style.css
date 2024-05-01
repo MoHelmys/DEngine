@@ -143,3 +143,40 @@
 canvas {
   background-color: transparent !important; /* Default background color */
 }
+
+/* parallax style  */
+#parallax-mouse {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+}
+#parallax-mouse .layer:nth-child(1) {
+  position: relative !important;
+  left: -36% !important;
+  top: -40% !important;
+}
+#parallax-mouse .layer:nth-child(2) {
+  position: relative !important;
+  left: 51% !important;
+  top: -45% !important;
+}
+#parallax-mouse .layer:nth-child(3) {
+  position: relative !important;
+  left: -48% !important;
+}
+#parallax-mouse .layer:nth-child(4) {
+  position: relative !important;
+  top: 42% !important;
+  left: -49% !important;
+}
+
+#parallax-mouse .layer:nth-child(5) {
+  position: relative !important;
+  left: 14% !important;
+  top: 42% !important;
+}
+#parallax-mouse .layer:nth-child(6) {
+  position: relative !important;
+  top: 36% !important;
+  left: 33% !important;
+}
