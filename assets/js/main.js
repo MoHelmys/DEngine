@@ -41,3 +41,10 @@ function mouseMoveParallax(selectorId) {
 }
 
 mouseMoveParallax("parallax-mouse");
+
+// dynamic height for vertical swiper
+
+const h2VerticalSwiper = document.querySelector("#h2-vertical-swiper");
+console.dir(h2VerticalSwiper.firstElementChild.firstElementChild.clientHeight);
+h2VerticalSwiper.style.height =
+  h2VerticalSwiper.firstElementChild.firstElementChild.clientHeight + "px";
