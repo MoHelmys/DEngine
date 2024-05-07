@@ -180,3 +180,15 @@ canvas {
   top: 36% !important;
   left: 33% !important;
 }
+
+/* home three  */
+.h3-nav-logo {
+  clip-path: polygon(0 0, 100% 0%, 73% 100%, 0% 100%);
+}
+
+.bg-cover-bottom {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover !important;
+  background-position: bottom !important;
+}
