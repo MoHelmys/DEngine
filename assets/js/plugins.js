@@ -270,3 +270,36 @@ window.addEventListener("scroll", (event) => {
     header.classList.remove("bg-white");
   }
 });
+
+// Home 3 project Slider
+
+if (document.querySelector(".projectSlider-h3")) {
+  new Swiper(".projectSlider-h3", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    // centeredSlides: "auto",
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".project-slider-next",
+      prevEl: ".project-slider-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+}
