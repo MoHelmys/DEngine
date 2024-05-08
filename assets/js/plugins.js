@@ -303,3 +303,20 @@ if (document.querySelector(".projectSlider-h3")) {
     },
   });
 }
+
+if (document.querySelector(".testimonials-h3")) {
+  new Swiper(".testimonials-h3", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    // centeredSlides: "auto",
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".testimonials-slider-next",
+      prevEl: ".testimonials-slider-prev",
+    },
+  });
+}
