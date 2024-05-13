@@ -289,12 +289,8 @@ if (document.querySelector(".projectSlider-h3")) {
     },
     breakpoints: {
       640: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 30,
       },
       1024: {
         slidesPerView: 4,

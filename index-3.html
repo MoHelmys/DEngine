@@ -16,7 +16,7 @@
   </head>
   <body id="root " class="relative">
     <!-- top bar  -->
-    <div class="flex justify-between px-10 py-4 bg-white">
+    <div class="justify-between px-10 py-4 bg-white hidden md:flex">
       <div class="flex gap-10">
         <a
           href=""
@@ -183,12 +183,14 @@
       class="flex justify-center w-full sticky top-0 z-[99999]"
       id="stickyHeader"
     >
-      <header
-        class="w-full flex justify-between items-center h-fit px-5 xl:px-0"
-      >
+      <header class="w-full flex justify-between items-center h-fit px-0">
         <div class="flex gap-10 h-full items-center">
-          <div class="h3-nav-logo bg-sb-orange w-[366px]">
-            <img src="./assets/img/home-3/logo.svg" alt="" class="py-7 pl-9" />
+          <div class="h3-nav-logo bg-sb-orange w-[260px] md:w-[366px]">
+            <img
+              src="./assets/img/home-3/logo.svg"
+              alt=""
+              class="py-5 pl-5 md:py-7 md:pl-9"
+            />
           </div>
           <div class="gap-6 hidden lg:flex py-3 lg:py-5">
             <div class="relative group">
@@ -295,7 +297,7 @@
         </div>
         <a
           href=""
-          class="flex text-heading hover:text-sb-orange items-center transition-all duration-300 h-fit gap-4 pr-10"
+          class="hidden sm:flex text-heading hover:text-sb-orange items-center transition-all duration-300 h-fit gap-4 pr-10"
         >
           <svg
             width="55"
@@ -403,7 +405,7 @@
           </div>
         </a>
         <!-- mobile menu icons  -->
-        <div class="w-8 lg:hidden" id="mobile-nav-btn">
+        <div class="w-8 lg:hidden mr-4" id="mobile-nav-btn">
           <svg
             class="transition-all duration-300"
             id="menu-btn"
@@ -560,7 +562,7 @@
     <!-- Hero start  -->
     <section class="bg-white">
       <div
-        class="px-4 xl:px-0 w-full pb-[150px] bg-cover-bottom"
+        class="px-4 xl:px-0 w-full pb-[60px] lg:pb-[150px] bg-cover-bottom"
         style="background: url('./assets/img/home-3/hero-bg.png')"
       >
         <div class="container pt-24 lg:pt-[140px] gap-5">
@@ -614,7 +616,7 @@
               >
             </h1>
             <h2
-              class="text-[55px] leading-[61px] font-extrabold text-white capitalize mt-4"
+              class="text-4xl sm:text-[55px] sm:leading-[61px] font-extrabold text-white capitalize mt-4"
             >
               Stay ahead cutting-<span class="text-sb-orange">technology</span>
               IT landscape
@@ -667,10 +669,13 @@
     </section>
     <!-- Hero end  -->
     <!-- service start  -->
-    <section class="w-full pt-[120px]">
-      <div class="container grid grid-cols-12 gap-[30px]">
+    <section class="w-full px-4 lg:px-0 pt-[60px] lg:pt-[120px]">
+      <div
+        class="container grid grid-cols-6 lg:grid-cols-12 gap-3.5 sm:gap-[30px]"
+      >
         <!-- card  -->
         <div
+          data-aos="fade-right"
           class="col-span-3 shadow-primary bg-white group p-[30px] rounded-[20px]"
         >
           <div
@@ -752,12 +757,15 @@
               </defs>
             </svg>
           </div>
-          <h1 class="text-2xl leading-10 font-bold mt-5 text-heading">
+          <h1
+            class="text-xl sm:text-2xl sm:leading-10 font-bold mt-5 text-heading"
+          >
             Custom Software an a Development
           </h1>
         </div>
         <!-- card  -->
         <div
+          data-aos="fade-up"
           class="col-span-3 shadow-primary bg-white group p-[30px] rounded-[20px]"
         >
           <div
@@ -831,12 +839,15 @@
               </defs>
             </svg>
           </div>
-          <h1 class="text-2xl leading-10 font-bold mt-5 text-heading">
+          <h1
+            class="text-xl sm:text-2xl sm:leading-10 font-bold mt-5 text-heading"
+          >
             Digita Transformation the Solutions
           </h1>
         </div>
         <!-- card  -->
         <div
+          data-aos="fade-up"
           class="col-span-3 shadow-primary bg-white group p-[30px] rounded-[20px]"
         >
           <div
@@ -911,12 +922,15 @@
               />
             </svg>
           </div>
-          <h1 class="text-2xl leading-10 font-bold mt-5 text-heading">
+          <h1
+            class="text-xl sm:text-2xl sm:leading-10 font-bold mt-5 text-heading"
+          >
             Project Management Services It
           </h1>
         </div>
         <!-- card  -->
         <div
+          data-aos="fade-left"
           class="col-span-3 shadow-primary bg-white group p-[30px] rounded-[20px]"
         >
           <div
@@ -971,7 +985,9 @@
               />
             </svg>
           </div>
-          <h1 class="text-2xl leading-10 font-bold mt-5 text-heading">
+          <h1
+            class="text-xl sm:text-2xl sm:leading-10 font-bold mt-5 text-heading"
+          >
             Networ Infrastructure the Solutions
           </h1>
         </div>
@@ -979,9 +995,9 @@
     </section>
     <!-- service end  -->
     <!-- about_us start  -->
-    <section class="pt-[120px]">
-      <div class="container grid grid-cols-12">
-        <div class="col-span-6">
+    <section class="px-4 xl:px-0 pt-[60px] lg:pt-[120px]">
+      <div class="container grid grid-cols-6 gap-y-5 lg:grid-cols-12">
+        <div data-aos="fade-right" class="col-span-6">
           <h1 class="flex h-fit items-center gap-2.5">
             <svg
               width="20"
@@ -1034,13 +1050,13 @@
             Empower your business with IT most the
             <span class="text-sb-orange">Solutions</span>
           </h2>
-          <p class="text-lg text-white/80 mt-5 max-w-[586px]">
+          <p class="text-lg text-paragraph mt-2 lg:mt-5 max-w-[586px]">
             IT Solution is a broad category that encompasses various
             technological solutions aimed at solving problems or improving
             efficiency in the field of information technology the best it design
             in the field
           </p>
-          <div class="grid grid-cols-12 mt-10 gap-[30px]">
+          <div class="grid grid-cols-6 sm:grid-cols-12 mt-10 gap-[30px]">
             <div
               class="col-span-6 flex justify-center items-center relative rounded-[20px] overflow-hidden"
             >
@@ -1164,7 +1180,10 @@
             </div>
           </div>
         </div>
-        <div class="col-span-6 flex justify-end">
+        <div
+          data-aos="fade-up"
+          class="col-span-6 flex justify-center lg:justify-end"
+        >
           <img
             src="./assets/img/home-3/about-img.png"
             alt=""
@@ -1175,7 +1194,9 @@
     </section>
     <!-- about_us end  -->
     <!-- Latest Service start  -->
-    <section class="bg-[#FFFAF0] pt-[120px] mt-[120px]">
+    <section
+      class="bg-[#FFFAF0] px-4 xl:px-0 pt-[60px] lg:pt-[120px] mt-[60px] lg:mt-[120px]"
+    >
       <div class="container">
         <h1 class="flex h-fit items-center gap-2.5 justify-center">
           <svg
@@ -1230,9 +1251,12 @@
           IT
           <span class="text-sb-orange">Solutions</span>
         </h2>
-        <div class="grid grid-cols-12 gap-[30px] mt-[60px]">
+        <div
+          class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] mt-[60px]"
+        >
           <!-- card  -->
           <div
+            data-aos="fade-right"
             class="col-span-4 shadow-primary bg-white group p-[30px] rounded-[20px]"
           >
             <div class="flex w-full justify-between">
@@ -1294,6 +1318,7 @@
           </div>
           <!-- card  -->
           <div
+            data-aos="fade-up"
             class="col-span-4 shadow-primary bg-white group p-[30px] rounded-[20px]"
           >
             <div class="flex w-full justify-between">
@@ -1395,6 +1420,7 @@
           </div>
           <!-- card  -->
           <div
+            data-aos="fade-left"
             class="col-span-4 shadow-primary bg-white group p-[30px] rounded-[20px]"
           >
             <div class="flex w-full justify-between">
@@ -1469,10 +1495,10 @@
     <!-- Latest Service end  -->
     <!-- Latest Project start  -->
     <section
-      class="py-[120px] bg-[#FFFAF0] w-screen max-w-[98.5vw] overflow-hidden"
+      class="px-4 xl:px-0 pt-[60px] lg:py-[120px] bg-[#FFFAF0] w-screen max-w-[98.5vw] overflow-hidden pb-10 lg:pb-0"
     >
-      <div class="container grid grid-cols-12">
-        <div class="col-span-4">
+      <div class="container grid grid-cols-4 md:grid-cols-12 gap-y-5">
+        <div class="col-span-5 lg:col-span-4">
           <h1 class="flex h-fit items-center gap-2.5">
             <svg
               width="20"
@@ -1578,7 +1604,7 @@
             </button>
           </div>
         </div>
-        <div class="col-span-8">
+        <div class="col-span-7 lg:col-span-8">
           <div
             class="swiper w-[150%] xl:min-w-[120vw] 2xl:min-w-[90vw] projectSlider-h3"
           >
@@ -1665,17 +1691,17 @@
     </section>
     <!-- Latest Project start  -->
     <!-- fun fact  start  -->
-    <section class="w-full flex relative">
+    <section class="w-full px-4 xl:px-0 flex relative">
       <div class="w-full h-1/2 bg-[#FFFAF0] top-0 left-0 absolute z-0"></div>
       <div
-        class="container relative z-10 rounded-[20px] bg-white p-[60px] flex justify-between gap-4 shadow-primary"
+        class="container relative z-10 rounded-[20px] bg-white py-[60px] flex justify-around gap-4 shadow-primary flex-wrap"
       >
-        <div class="relative">
+        <div data-aos="fade-in" class="relative">
           <div
-            class="absolute bg-sb-orange/20 z-0 -right-2.5 -bottom-2.5 w-full h-full rounded-[20px]"
+            class="absolute bg-sb-orange/20 z-0 -right-1.5 sm:-right-2.5 -bottom-1.5 sm:-bottom-2.5 w-full h-full rounded-[20px]"
           ></div>
           <div
-            class="w-[220px] h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
+            class="w-[180px] h-[103px] sm:w-[220px] sm:h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
           >
             <h1
               class="text-[40px] leading-10 font-[900] text-center text-white"
@@ -1685,12 +1711,12 @@
             <p class="text-lg text-white text-center mt-2">Wining Award</p>
           </div>
         </div>
-        <div class="relative">
+        <div data-aos="fade-in" data-aos-delay="100" class="relative">
           <div
-            class="absolute bg-sb-orange/20 z-0 -right-2.5 -bottom-2.5 w-full h-full rounded-[20px]"
+            class="absolute bg-sb-orange/20 z-0 -right-1.5 sm:-right-2.5 -bottom-1.5 sm:-bottom-2.5 w-full h-full rounded-[20px]"
           ></div>
           <div
-            class="w-[220px] h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
+            class="w-[180px] h-[103px] sm:w-[220px] sm:h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
           >
             <h1
               class="text-[40px] leading-10 font-[900] text-center text-white"
@@ -1700,12 +1726,12 @@
             <p class="text-lg text-white text-center mt-2">Compete Project</p>
           </div>
         </div>
-        <div class="relative">
+        <div data-aos="fade-in" data-aos-delay="200" class="relative">
           <div
-            class="absolute bg-sb-orange/20 z-0 -right-2.5 -bottom-2.5 w-full h-full rounded-[20px]"
+            class="absolute bg-sb-orange/20 z-0 -right-1.5 sm:-right-2.5 -bottom-1.5 sm:-bottom-2.5 w-full h-full rounded-[20px]"
           ></div>
           <div
-            class="w-[220px] h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
+            class="w-[180px] h-[103px] sm:w-[220px] sm:h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
           >
             <h1
               class="text-[40px] leading-10 font-[900] text-center text-white"
@@ -1715,12 +1741,12 @@
             <p class="text-lg text-white text-center mt-2">Clients Review</p>
           </div>
         </div>
-        <div class="relative">
+        <div data-aos="fade-in" data-aos-delay="300" class="relative">
           <div
-            class="absolute bg-sb-orange/20 z-0 -right-2.5 -bottom-2.5 w-full h-full rounded-[20px]"
+            class="absolute bg-sb-orange/20 z-0 -right-1.5 sm:-right-2.5 -bottom-1.5 sm:-bottom-2.5 w-full h-full rounded-[20px]"
           ></div>
           <div
-            class="w-[220px] h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
+            class="w-[180px] h-[103px] sm:w-[220px] sm:h-[133px] rounded-[20px] bg-sb-orange flex flex-col justify-center items-center relative z-10"
           >
             <h1
               class="text-[40px] leading-10 font-[900] text-center text-white"
@@ -1735,7 +1761,7 @@
     <!-- fun fact  end  -->
 
     <!-- Pricing start  -->
-    <section class="bg-white mt-[120px]">
+    <section class="bg-white px-4 xl:px-0 mt-[60px] lg:mt-[120px]">
       <div class="container">
         <h1 class="flex h-fit items-center gap-2.5 justify-center">
           <svg
@@ -1790,7 +1816,9 @@
           IT
           <span class="text-sb-orange">Solutions</span>
         </h2>
-        <div class="grid grid-cols-12 gap-[30px] mt-[60px]">
+        <div
+          class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] mt-[60px]"
+        >
           <!-- card  -->
           <div
             class="col-span-4 shadow-primary bg-white group p-[30px] rounded-[20px] pb-10 border-2 border-white hover:border-heading hover:bg-[#FFFAF0] transition-all duration-300"
@@ -1900,6 +1928,7 @@
           </div>
           <!-- card  -->
           <div
+            data-aos="fade-up"
             class="col-span-4 shadow-primary hover:bg-white group p-[30px] rounded-[20px] pb-10 border-2 border-heading hover:border-sb-orange bg-[#FFFAF0] transition-all duration-300"
           >
             <h1
@@ -2105,13 +2134,13 @@
     </section>
     <!-- Pricing end  -->
     <!-- Why us start -->
-    <section class="mt-[120px] relative h-fit">
+    <section class="mt-[60px] lg:mt-[120px] relative h-fit">
       <img
         src="./assets/img/home-3/why-bg.png"
         alt=""
         class="absolute h-full top-0 z-0 object-cover"
       />
-      <div class="container py-20 relative z-10">
+      <div class="container py-20 relative z-10 px-4 xl:px-0">
         <div class="max-w-[580px]">
           <h1 class="flex h-fit items-center gap-2.5">
             <svg
@@ -2169,7 +2198,7 @@
           <div
             class="flex flex-col gap-[30px] mt-10 justify-center relative w-full max-w-[546px]"
           >
-            <div class="absolute -right-8">
+            <div class="absolute -right-8 hidden md:block">
               <svg
                 width="40"
                 height="112"
@@ -2184,7 +2213,8 @@
               </svg>
             </div>
             <div
-              class="w-full w-full rounded-[20px] border-2 border-[#1A2429] px-[30px] py-5"
+              data-aos="fade-right"
+              class="w-full rounded-[20px] border-2 border-[#1A2429] px-[30px] py-5"
             >
               <div class="flex h-fit items-center gap-[30px]">
                 <svg
@@ -2229,6 +2259,7 @@
               </p>
             </div>
             <div
+              data-aos="fade-left"
               class="w-full max-w-[546px] rounded-[20px] border-2 border-[#1A2429] px-[30px] py-5"
             >
               <div class="flex h-fit items-center gap-[30px]">
@@ -2292,9 +2323,9 @@
     </section>
     <!-- Why us end -->
     <!-- testimonials start  -->
-    <section class="pt-[120px]">
+    <section class="pt-[60px] lg:pt-[120px] px-4 xl:px-0">
       <div class="container">
-        <div class="flex justify-between">
+        <div class="flex justify-between flex-col gap-5 md:flex-row">
           <div class="">
             <h1 class="flex h-fit items-center gap-2.5">
               <svg
@@ -2700,7 +2731,7 @@
     </section>
     <!-- testimonials end  -->
     <!-- blog start  -->
-    <section class="pt-[120px]">
+    <section class="pt-[60px] lg:pt-[120px] overflow-hidden">
       <div class="container">
         <h1 class="flex h-fit items-center gap-2.5 justify-center">
           <svg
@@ -2757,9 +2788,12 @@
           the
           <span class="text-sb-orange">Solutions</span>
         </h2>
-        <div class="grid grid-cols-12 gap-[30px] mt-[60px]">
+        <div
+          class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] mt-[60px]"
+        >
           <!-- card  -->
           <div
+            data-aos="fade-right"
             class="col-span-4 bg-white group overflow-hidden rounded-[20px] border border-[#F5F5F5]"
           >
             <div class="relative flex justify-center">
@@ -2836,6 +2870,7 @@
           </div>
           <!-- card  -->
           <div
+            data-aos="fade-up"
             class="col-span-4 bg-white group overflow-hidden rounded-[20px] border border-[#F5F5F5]"
           >
             <div class="relative flex justify-center">
@@ -2912,6 +2947,7 @@
           </div>
           <!-- card  -->
           <div
+            data-aos="fade-left"
             class="col-span-4 bg-white group overflow-hidden rounded-[20px] border border-[#F5F5F5]"
           >
             <div class="relative flex justify-center">
@@ -2997,11 +3033,11 @@
         alt=""
         class="absolute bottom-0"
       />
-      <section class="mt-[120px] relative">
+      <section class="mt-[60px] lg:mt-[120px] relative">
         <div
           class="container rounded-[20px] overflow-hidden bg-[#1A2429] flex justify-between relative z-10"
         >
-          <div class="p-20">
+          <div data-aos="fade-right" class="px-5 py-10 md:py-20 md:px-20">
             <h2
               class="text-[40px] leading-[45px] font-extrabold text-white capitalize mt-4"
             >
@@ -3012,7 +3048,7 @@
               It is a long established fact that a reader will be distracted by
               the readable content of a page at its layout.
             </p>
-            <div class="flex max-w-[561px] gap-3.5 mt-10">
+            <div class="flex flex-row max-w-[561px] gap-3.5 mt-10">
               <input
                 type="text"
                 class="outline-none focus:outline-none rounded-[999px] border-2 border-[#F5F5F5]/20 px-3 bg-transparent flex-1"
@@ -3044,7 +3080,12 @@
               </div>
             </div>
           </div>
-          <img src="./assets/img/home-3/cta-right.png" alt="" class="" />
+          <img
+            data-aos="fade-left"
+            src="./assets/img/home-3/cta-right.png"
+            alt=""
+            class="hidden md:block"
+          />
         </div>
         <div
           class="w-full h-1/2 bg-white absolute -top-0.5 z-0 overflow-hidden"

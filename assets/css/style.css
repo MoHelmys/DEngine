@@ -192,3 +192,29 @@ canvas {
   background-size: cover !important;
   background-position: bottom !important;
 }
+
+/* custom scrollbar  */
+
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #f9c8b8;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ec4814;
+}

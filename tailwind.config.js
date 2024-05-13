@@ -15,6 +15,7 @@ module.exports = {
       boxShadow: {
         primary: "0px 0px 60px 0px #0000000D",
         threeSide: "0px 10px 10px 0px #0000000D",
+        "card-shadow": "0px 10px 10px 0px #0000000D",
       },
       colors: {
         heading: "#0E191E",
