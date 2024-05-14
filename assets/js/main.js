@@ -22,7 +22,7 @@ if (playBtn) {
 
 // mobile nav toggle
 const menuBtn = document.getElementById("mobile-nav-btn");
-
+const menuOverlay = document.getElementById("mnav-menu-overlay");
 menuBtn.addEventListener("click", () => {
   document.getElementById("menu-btn").classList.toggle("hidden");
   document.getElementById("close-btn").classList.toggle("hidden");
@@ -30,6 +30,15 @@ menuBtn.addEventListener("click", () => {
     .getElementById("mnav-menu-item")
     .classList.toggle("-translate-x-[100vw]");
 });
+if (menuOverlay) {
+  menuOverlay.addEventListener("click", () => {
+    document.getElementById("menu-btn").classList.toggle("hidden");
+    document.getElementById("close-btn").classList.toggle("hidden");
+    document
+      .getElementById("mnav-menu-item")
+      .classList.toggle("-translate-x-[100vw]");
+  });
+}
 
 // parallax
 
@@ -45,6 +54,7 @@ mouseMoveParallax("parallax-mouse");
 // dynamic height for vertical swiper
 
 const h2VerticalSwiper = document.querySelector("#h2-vertical-swiper");
-console.dir(h2VerticalSwiper.firstElementChild.firstElementChild.clientHeight);
-h2VerticalSwiper.style.height =
-  h2VerticalSwiper.firstElementChild.firstElementChild.clientHeight + "px";
+if (h2VerticalSwiper) {
+  h2VerticalSwiper.style.height =
+    h2VerticalSwiper.firstElementChild.firstElementChild.clientHeight + "px";
+}
