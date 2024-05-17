@@ -1,4 +1,4 @@
-// Home 1 partner slider setup
+// Digital Marketing partner slider setup
 
 if (document.querySelector(".partnerSlider")) {
   new Swiper(".partnerSlider", {
@@ -35,7 +35,7 @@ if (document.querySelector(".partnerSlider")) {
   });
 }
 
-// Home 1 project Slider
+// Digital Marketing project Slider
 
 if (document.querySelector(".projectSlider")) {
   new Swiper(".projectSlider", {
@@ -68,7 +68,7 @@ if (document.querySelector(".projectSlider")) {
   });
 }
 
-// Home 1 testimonials slider
+// Digital Marketing testimonials slider
 if (document.querySelector(".testimonialsSlider")) {
   new Swiper(".testimonialsSlider", {
     spaceBetween: 0,
@@ -87,7 +87,7 @@ if (document.querySelector(".testimonialsSlider")) {
   });
 }
 
-// Home 2 testimonials slider
+// Mobile App testimonials slider
 if (document.querySelector(".h2-testimonialsSlider")) {
   new Swiper(".h2-testimonialsSlider", {
     direction: "vertical",
@@ -271,7 +271,7 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
-// Home 3 project Slider
+// IT Solutions project Slider
 
 if (document.querySelector(".projectSlider-h3")) {
   new Swiper(".projectSlider-h3", {
@@ -310,9 +310,48 @@ if (document.querySelector(".testimonials-h3")) {
       delay: 2500,
       disableOnInteraction: false,
     },
-    navigation: {
-      nextEl: ".testimonials-slider-next",
-      prevEl: ".testimonials-slider-prev",
+  });
+}
+
+// Thumbslider
+if (document.querySelector(".project-detail-slider-thumb")) {
+  const swiperThumb = new Swiper(".project-detail-slider-thumb", {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const swiper2 = new Swiper(".project-detail-slider", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiperThumb,
     },
+  });
+}
+
+// modal slider
+// image slider zoom
+let sliderActive = 0;
+const swiper3 = new Swiper(".modal-slider", {
+  initialSlide: sliderActive,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+const zoomBtns = document.querySelectorAll(".zoom-slider");
+
+if (zoomBtns) {
+  zoomBtns.forEach((btn, index) => {
+    btn.addEventListener("click", (index) => {
+      document.getElementById("slider-modal").classList.remove("hidden");
+      sliderActive = index;
+    });
+  });
+}
+
+if (document.getElementById("modal-close")) {
+  document.getElementById("modal-close").addEventListener("click", () => {
+    document.getElementById("slider-modal").classList.add("hidden");
   });
 }

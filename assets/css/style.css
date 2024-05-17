@@ -218,3 +218,33 @@ canvas {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #ec4814;
 }
+.swiper-slide-thumb-active {
+  border: 2px solid #ec4814;
+}
+.open-anim {
+  transform-origin: top left;
+  animation: slider-open 200ms linear;
+}
+
+@keyframes slider-open {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.option-open {
+  transform-origin: top left;
+  animation: option-open 300ms linear;
+}
+
+@keyframes option-open {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
