@@ -14,7 +14,7 @@ body {
 
 @layer components {
   .nav-link {
-    @apply text-heading text-sm font-semibold flex justify-center items-center gap-1 w-fit relative before:inline-block before:w-0 before:absolute before:border-b before:border-heading before:h-full leading-4 hover:before:w-full before:transition-all before:duration-300 before:left-0;
+    @apply text-heading text-lg font-semibold flex justify-center items-center gap-1 w-fit relative before:inline-block before:w-0 before:absolute before:border-b before:border-heading before:h-full leading-4 hover:before:w-full before:transition-all before:duration-300 before:left-0;
   }
 }
 
