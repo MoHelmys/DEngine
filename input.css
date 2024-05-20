@@ -64,3 +64,7 @@ body {
 .v-player {
   @apply w-[80%]  absolute;
 }
+
+.active-faq {
+  @apply shadow-primary;
+}
