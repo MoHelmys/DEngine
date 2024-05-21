@@ -355,3 +355,34 @@ if (document.getElementById("modal-close")) {
     document.getElementById("slider-modal").classList.add("hidden");
   });
 }
+
+if (document.querySelector(".ms-swiper")) {
+  new Swiper(".ms-swiper", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    // centeredSlides: "auto",
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      360: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
+  });
+}
