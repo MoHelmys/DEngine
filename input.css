@@ -38,13 +38,13 @@ body {
 
 @layer components {
   .border-btn {
-    @apply block  text-center rounded-[125px] border border-sb-orange hover:text-white text-heading text-[15px] leading-[15px] relative overflow-hidden bg-transparent font-bold px-[30px] py-3 transition-all duration-300 before:block before:absolute before:w-full before:h-full before:top-full before:-z-[1] before:left-0 before:transition-all before:duration-300 before:bg-sb-orange before:bg-opacity-50 hover:before:top-0 after:block after:absolute after:w-full after:h-full after:top-full  after:left-0 after:transition-all after:duration-300 after:bg-sb-orange after:delay-200 hover:after:top-0 after:-z-[1];
+    @apply block  text-center rounded-[125px] border border-sb-orange hover:text-white text-heading text-[15px] leading-[15px] relative overflow-hidden bg-transparent font-bold px-[30px] py-5 transition-all duration-300 before:block before:absolute before:w-full before:h-full before:top-full before:-z-[1] before:left-0 before:transition-all before:duration-300 before:bg-sb-orange before:bg-opacity-50 hover:before:top-0 after:block after:absolute after:w-full after:h-full after:top-full  after:left-0 after:transition-all after:duration-300 after:bg-sb-orange after:delay-200 hover:after:top-0 after:-z-[1];
   }
 }
 
 @layer components {
   .bg-btn {
-    @apply block  text-center rounded-[125px] border border-sb-orange hover:text-heading text-white text-[15px] leading-[15px] relative overflow-hidden bg-transparent font-bold px-[30px] py-3 transition-all duration-300 before:block before:absolute before:w-full before:h-full hover:before:-top-full before:-z-[1] before:left-0 before:transition-all before:duration-300 before:bg-sb-orange before:bg-opacity-50 before:top-0 before:delay-200 after:block after:absolute after:w-full after:h-full hover:after:-top-full  after:left-0 after:transition-all after:duration-300 after:bg-sb-orange  after:top-0 after:-z-[1];
+    @apply block  text-center rounded-[125px] border border-sb-orange hover:text-heading text-white text-[15px] leading-[15px] relative overflow-hidden bg-transparent font-bold px-[30px] py-5 transition-all duration-300 before:block before:absolute before:w-full before:h-full hover:before:-top-full before:-z-[1] before:left-0 before:transition-all before:duration-300 before:bg-sb-orange before:bg-opacity-50 before:top-0 before:delay-200 after:block after:absolute after:w-full after:h-full hover:after:-top-full  after:left-0 after:transition-all after:duration-300 after:bg-sb-orange  after:top-0 after:-z-[1];
   }
 }
 

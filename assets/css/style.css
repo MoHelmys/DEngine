@@ -248,3 +248,8 @@ canvas {
     transform: scaleY(1);
   }
 }
+
+.bg-\[\#FFFAF0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 240 / var(--tw-bg-opacity)) !important;
+}
