@@ -54,7 +54,7 @@ body {
 
 /* video player wrapper  */
 .v-wrapper {
-  @apply w-screen h-screen flex justify-center items-center fixed z-50 bg-black/50 top-0 left-0  overflow-hidden;
+  @apply w-screen h-screen flex justify-center items-center fixed  bg-black/50 top-0 left-0  overflow-hidden z-[99999999999];
 }
 
 .v-close-btn {
